@@ -1,0 +1,38 @@
+.garanty {
+    &__subtitle {
+        &-text {
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 21px;
+            color: #959ead;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            max-width: 950px;
+        }
+    }
+    &__list {
+        &-item {
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 21px;
+            color: #000000;
+            margin-bottom: 15px;
+            ul {
+                padding-left: 50px;
+                li {
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+    &__title {
+        &-sm {
+            margin-top: 50px;
+            margin-bottom: 20px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+            color: #000000;
+        }
+    }
+}

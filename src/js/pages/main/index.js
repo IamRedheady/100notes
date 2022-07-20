@@ -8,6 +8,9 @@ import 'swiper/css/bundle';
 const introSlider = new Swiper(".intro-slider .swiper-container", {
     slidesPerView: 1,
     effect: 'fade',
+    autoplay: {
+        delay: 5000,
+      },
     fadeEffect: {
         crossFade: true
     },
@@ -21,3 +24,4 @@ const introSlider = new Swiper(".intro-slider .swiper-container", {
         el: '.intro-slider .swiper-pagination',
     }
 })
+

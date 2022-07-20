@@ -1,10 +1,18 @@
+// Product Card
 .p-card {
-    background: #f5f5f5;
+    background: #ffffff;
     box-shadow: 0px 0px 7px 3px rgba(145, 158, 171, 0.19);
     border-radius: 4px;
     overflow: hidden;
     position: relative;
     padding: 67px 15px 15px 15px;
+    .compare.button,
+    .add_to_wishlist_button,
+    .view_wishlist_button,
+    #nc_wishlist_added,
+    .fami-wccp-button {
+        display: none !important;
+    }
     &__btn-favorite,
     &__btn-compare {
         border-radius: 100px;
@@ -34,9 +42,9 @@
         }
         &.active,
         &:active {
-            background-color: #de3618;
+            background-color: #de3618 !important;
             path {
-                fill: #fff;
+                fill: #fff !important;
             }
         }
     }
@@ -44,16 +52,36 @@
     &__btn-compare {
         top: 50px;
         &:hover {
-            background-color: #f49342;
+            background-color: #fff;
             rect {
-                fill: #fff;
+                fill: #50b83c;
+            }
+        }
+        &.active {
+            background-color: #50b83c !important;
+            rect {
+                fill: #fff !important;
             }
         }
     }
 
+    &:hover &__btn-compare {
+        background-color: #fff;
+        rect {
+            fill: #50b83c;
+        }
+    }
+
+    &:hover &__btn-favorite {
+        background-color: #fff;
+        path {
+            fill: #de3618;
+        }
+    }
+
     &__pic {
-        width: 200px;
-        height: 132px;
+        width: 100%;
+        height: 130px;
         display: block;
         margin: auto;
     }
@@ -91,7 +119,32 @@
         border-radius: 1px;
         width: 60px;
         height: 9px;
-        margin-left: 20px;
+        margin-left: 0;
+        &-text {
+            background: #dfe3e8;
+            border-radius: 2px;
+            font-size: 10px;
+            line-height: 12px;
+            letter-spacing: 0.155556px;
+            color: #919eab;
+            padding: 4px 7px;
+            text-align: center;
+            display: block;
+            position: absolute;
+            bottom: calc(100% + 10px);
+            width: 100%;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            svg {
+                position: absolute;
+                top: calc(100% - 5px);
+                left: calc(50% - 7.5px);
+            }
+        }
+        &:hover &-text {
+            opacity: 1;
+        }
     }
 
     &__info-status-tooltip {
@@ -115,6 +168,7 @@
         letter-spacing: 0.2px;
         color: #161d25;
         height: 38px;
+        overflow-y: hidden;
     }
 
     &__price {
@@ -129,7 +183,7 @@
 
     &__more,
     &__buy {
-        background-color: #ffffff;
+        background-color: #f5f5f5;
         border-radius: 8px;
         position: absolute;
         bottom: 15px;
@@ -150,8 +204,11 @@
     &__buy {
         right: 15px;
         background-color: #454f5b;
-        &:active {
+        &:hover {
             background-color: #50b83c;
+        }
+        & + .added_to_cart {
+            display: none;
         }
     }
 
@@ -171,8 +228,8 @@
 @media screen and (max-width: 550px) {
     .p-card {
         &__pic {
-            width: auto;
-            height: auto;
+            width: 90%;
+            height: 300px;
         }
     }
 }

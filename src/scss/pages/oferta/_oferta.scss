@@ -1,0 +1,56 @@
+.oferta {
+    &__title {
+        margin-bottom: 5px;
+    }
+
+    &__subtitle {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: #161d25;
+        margin-bottom: 50px;
+    }
+
+    &__text-title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
+        margin-bottom: 5px;
+        max-width: 740px;
+        margin-top: 25px;
+    }
+
+    &__text-subtitle {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        color: #000000;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    &__text-list {
+    }
+
+    &__text-list-item {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 21px;
+        color: #454f5b;
+        margin-bottom: 5px;
+    }
+    &__list {
+        &-item {
+            margin-bottom: 5px;
+        }
+    }
+}
+.sub {
+    &__title {
+    }
+}

@@ -1,0 +1,16 @@
+.categories-page {
+    .categories {
+        &__list {
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 40px;
+        }
+    }
+
+    @media screen and (max-width: 770px) {
+        .categories {
+            &__list {
+                grid-gap: 20px;
+            }
+        }
+    }
+}

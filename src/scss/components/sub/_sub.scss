@@ -1,0 +1,20 @@
+.sub {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1163px;
+    margin-top: 50px;
+    &__title {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 24px;
+        color: #161d25;
+        margin-bottom: 15px;
+    }
+    &__subtitle {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #919eab;
+        max-width: 670px;
+    }
+}

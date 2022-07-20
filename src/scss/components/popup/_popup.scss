@@ -1,0 +1,115 @@
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    justify-content: center;
+    display: none;
+    &-on {
+        display: flex;
+    }
+    &-inner {
+        margin: auto;
+    }
+}
+
+.account-popup {
+    .woocommerce {
+        background: #ffffff;
+        border-radius: 3px;
+        padding: 50px 140px;
+        max-width: 640px;
+        h2 {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 35px;
+            line-height: 41px;
+            text-align: center;
+            color: #161d25;
+            margin-bottom: 30px;
+        }
+        label {
+            display: none;
+        }
+        .woocommerce-privacy-policy-text {
+            display: none;
+        }
+        .input-text {
+            border: 1px solid #d2d8df;
+            box-sizing: border-box;
+            border-radius: 3px;
+            padding: 13px;
+            width: 100%;
+            font-size: 14px;
+            line-height: 17px;
+            color: #c4cdd5;
+            margin-bottom: 20px;
+        }
+        .woocommerce-form-login__rememberme {
+            display: none;
+        }
+        .auth-box {
+            &.col-1,
+            &.col-2 {
+                display: none;
+            }
+            &.active {
+                display: block;
+            }
+        }
+        .auth-controls {
+            border-top: 1px solid #c4cdd5;
+            margin-top: 15px;
+            padding-top: 15px;
+            display: flex;
+            &__btn {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 17px;
+                color: #637381;
+                margin: auto;
+            }
+        }
+        .woocommerce-button {
+            background-color: #43467f;
+            border-radius: 3px;
+            display: block;
+            margin: auto;
+            margin-top: 40px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            color: #ffffff;
+            padding: 13px 46px;
+            transition: all 0.3s ease;
+            margin-bottom: 15px;
+        }
+        .lost_password {
+            text-align: center;
+            a {
+                font-size: 14px;
+                line-height: 17px;
+                color: #959ead;
+            }
+        }
+    }
+}
+
+// Compare Popup
+#cboxBottomLeft,
+#cboxBottomCenter,
+#cboxBottomRight,
+#cboxMiddleLeft,
+#cboxMiddleRight,
+#cboxTopLeft,
+#cboxTopCenter,
+#cboxTopRight {
+    display: none !important;
+}
+#cboxOverlay {
+    opacity: 0.5;
+}

@@ -1,5 +1,9 @@
 // Styles
-import '../scss/app.scss';
-// JS
-import './pages/main/index';
+import '../scss/app.scss'
+
+// Pages JS
+import "./pages/index"
+
+// Componets JS
+import "./components/index"
 

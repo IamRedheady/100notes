@@ -5,6 +5,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-appearance: none;
 }
 // Fonts
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
@@ -17,6 +20,9 @@ section {
 }
 h1 {
     margin: 0;
+}
+select {
+    -webkit-appearance: none;
 }
 h2 {
     font-style: normal;
@@ -38,8 +44,40 @@ button {
 ul {
     list-style-type: none;
 }
+input {
+    outline: none;
+    border: none;
+    background: none;
+}
+.scroll-off {
+    overflow: hidden;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    display: none;
+}
+.entry-title {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    color: #161d25;
+    margin-bottom: 30px;
+}
+.content-page {
+    max-width: 1163px;
+    margin: auto;
+    margin-top: 100px;
+}
 @media screen and (max-width: 1200px) {
-    section {
+    section,
+    .breads,
+    .content-page {
         padding-left: 20px;
         padding-right: 20px;
         margin-bottom: 60px;
@@ -47,6 +85,12 @@ ul {
     h2 {
         margin-bottom: 30px;
     }
+    .content-page {
+        margin-top: 180px;
+    }
+}
+.swiper-wrapper {
+    z-index: 0 !important;
 }
 @media screen and (max-width: 680px) {
     h2 {
